@@ -1,0 +1,218 @@
+body{
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: white;
+  
+}
+.logo {
+    max-width: 200px; 
+    height: auto;
+    background-color: transparent;
+    margin-left: 45%;
+    margin-right: 55%;
+  }
+  .header {/*giu cho toolbar đứng im*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent; 
+  }
+.toolbar {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
+  }
+  
+  .toolbar button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+  }
+  
+  .toolbar button:hover {
+    color: #ffd6e0;
+    transform: translateY(-2px);
+  }
+  .auth {
+    display: flex;
+    gap: 15px;
+    margin-left: 51%;
+    flex-wrap: nowrap;
+  }
+  
+  .auth button {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .auth button:hover {
+    background-color: #ff3385;
+    transform: translateY(-2px);
+  }
+  nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+  }
+  
+  nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #ff69b4; 
+    border-radius: 5px;
+  }
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  
+  .CatBa, .CoTo, .HaLong {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+   
+  .CatBa-img, .CoTo-img, .HaLong-img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+ 
+  .CatBa div, .CoTo div, .HaLong div {
+    width: 50%;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  .Tieude {
+    font-size: 28px;
+    color: #ff69b4;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .footer {
+    background:#2e003e;
+    padding: 40px 20px 20px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+  }
+  
+  .footer-logo h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ff69b4;
+  }
+  
+  .footer-social .icons a {
+    margin-right: 12px;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .footer-social .icons a:hover {
+    color: #ffd6e0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+      
+  
+  
